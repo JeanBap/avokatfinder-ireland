@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="/css/style.css">
+<style>:root{--country-primary:#169B62;--country-secondary:#FF883E;}</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><img src="/img/logo.svg" alt="AvökatFinder" class="logo-img" width="60" height="28"><span class="logo-text">AvökatFinder <span>Ireland</span></span></a>
+    <button class="hamburger" aria-label="Open menu">&#9776;</button>
+    <nav>
+      <a href="/practice-areas/">Practice Areas</a>
+      <a href="/cities/">By City</a>
+      <a href="/blog/">Expat Guides</a>
+      <a href="/find-a-lawyer/" class="active" class="nav-cta">Find My Lawyer</a>
+      <a href="/dashboard/">My Saved</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="container">
+    <h1>Find My Lawyer in Ireland</h1>
+    <p>Answer 5 quick questions to match with the best English-speaking law firms for your situation.</p>
+  </div>
+</section>
+<section style="background:var(--off-white);padding:clamp(2rem,5vw,4rem) 24px;">
+  <div class="wizard-wrap">
+    <div class="wizard-card">
+      <div class="wizard-header"><h2>Find Your Lawyer</h2><p>5 questions &mdash; personalised matches in under a minute</p></div>
+      <div class="wizard-progress">
+        <div class="wizard-steps-bar" id="steps-bar">
+          <div class="wstep active" id="s1">1</div><div class="wstep-line" id="l1"></div>
+          <div class="wstep" id="s2">2</div><div class="wstep-line" id="l2"></div>
+          <div class="wstep" id="s3">3</div><div class="wstep-line" id="l3"></div>
+          <div class="wstep" id="s4">4</div><div class="wstep-line" id="l4"></div>
+          <div class="wstep" id="s5">5</div>
+        </div>
+      </div>
+      <div class="wizard-body">
+        <div class="wizard-step active" id="step-1">
+          <h2>Who needs legal help?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="entity" data-val="individual"><strong>Individual</strong><br><small>Personal or family matter</small></button>
+            <button class="wopt" data-key="entity" data-val="company"><strong>Business / Company</strong><br><small>Corporate or commercial matter</small></button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-2">
+          <h2>What type of legal help?</h2>
+          <div class="wizard-opts grid3"><button class="wopt" data-key="area" data-val="corporate-ma">Corporate & M&A</button>
+<button class="wopt" data-key="area" data-val="immigration">Immigration Law</button>
+<button class="wopt" data-key="area" data-val="real-estate">Real Estate Law</button>
+<button class="wopt" data-key="area" data-val="employment">Employment Law</button>
+<button class="wopt" data-key="area" data-val="golden-visa">Golden Visa & Residency</button>
+<button class="wopt" data-key="area" data-val="dispute-resolution">Dispute Resolution</button>
+<button class="wopt" data-key="area" data-val="banking-finance">Banking & Finance</button>
+<button class="wopt" data-key="area" data-val="family-law">Family Law</button>
+<button class="wopt" data-key="area" data-val="criminal-law">Criminal Law</button>
+<button class="wopt" data-key="area" data-val="intellectual-property">Intellectual Property</button>
+<button class="wopt" data-key="area" data-val="tax">Tax Law</button>
+<button class="wopt" data-key="area" data-val="data-protection">Data Protection & IT</button>
+</div>
+        </div>
+        <div class="wizard-step" id="step-3">
+          <h2>Which city?</h2>
+          <div class="wizard-opts grid2"><button class="wopt" data-key="city" data-val="athlone">Athlone</button>
+<button class="wopt" data-key="city" data-val="clonmel">Clonmel</button>
+<button class="wopt" data-key="city" data-val="cork">Cork</button>
+<button class="wopt" data-key="city" data-val="drogheda">Drogheda</button>
+<button class="wopt" data-key="city" data-val="dublin">Dublin</button>
+<button class="wopt" data-key="city" data-val="dundalk">Dundalk</button>
+<button class="wopt" data-key="city" data-val="ennis">Ennis</button>
+<button class="wopt" data-key="city" data-val="galway">Galway</button>
+<button class="wopt" data-key="city" data-val="kilkenny">Kilkenny</button>
+<button class="wopt" data-key="city" data-val="letterkenny">Letterkenny</button>
+<button class="wopt" data-key="city" data-val="limerick">Limerick</button>
+<button class="wopt" data-key="city" data-val="naas">Naas</button>
+<button class="wopt" data-key="city" data-val="any">Other / No preference</button></div>
+        </div>
+        <div class="wizard-step" id="step-4">
+          <h2>Language preference?</h2>
+          <div class="wizard-opts grid2">
+            <button class="wopt" data-key="lang" data-val="any">English only</button>
+            <button class="wopt" data-key="lang" data-val="german">+ German</button>
+            <button class="wopt" data-key="lang" data-val="french">+ French</button>
+            <button class="wopt" data-key="lang" data-val="spanish">+ Spanish</button>
+            <button class="wopt" data-key="lang" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-step" id="step-5">
+          <h2>Firm type preference?</h2>
+          <div class="wizard-opts">
+            <button class="wopt" data-key="service" data-val="international"><strong>Large international firm</strong><br><small>Highest rates, deepest resources</small></button>
+            <button class="wopt" data-key="service" data-val="mid"><strong>Mid-size local firm</strong><br><small>Strong local knowledge</small></button>
+            <button class="wopt" data-key="service" data-val="boutique"><strong>Boutique specialist</strong><br><small>Personal service, focused expertise</small></button>
+            <button class="wopt" data-key="service" data-val="any">No preference</button>
+          </div>
+        </div>
+        <div class="wizard-results" id="step-results">
+          <h2>Your Top Matches</h2>
+          <p>Best-matched English-speaking law firms in Ireland for your situation.</p>
+          <div id="wizard-results-list"></div>
+          <div style="margin-top:24px;text-align:center;">
+            <a href="/practice-areas/" class="btn btn-ghost">Browse all firms</a>
+            <button class="btn btn-primary" id="wizard-restart" style="margin-left:12px;">Start over</button>
+          </div>
+        </div>
+        <div class="wizard-nav" id="wizard-nav">
+          <button class="wbtn-back" id="wbtn-back" style="visibility:hidden">&larr; Back</button>
+          <span id="wstep-label" style="font-size:0.82rem;color:var(--text-muted)">Step 1 of 5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="footer-logo"><img src="/img/logo.svg" alt="AvökatFinder" width="44" height="20"
+         style="vertical-align:middle;margin-right:8px;filter:brightness(0) invert(1)">AvökatFinder Ireland</a>
+      <p>The English-language guide to lawyers in Ireland for expats and foreign nationals.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Practice Areas</h4><ul><li><a href="/practice-areas/corporate-ma/">Corporate & M&A</a></li>
+<li><a href="/practice-areas/immigration/">Immigration Law</a></li>
+<li><a href="/practice-areas/real-estate/">Real Estate Law</a></li>
+<li><a href="/practice-areas/employment/">Employment Law</a></li>
+<li><a href="/practice-areas/golden-visa/">Golden Visa & Residency</a></li>
+<li><a href="/practice-areas/dispute-resolution/">Dispute Resolution</a></li></ul>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/find-a-lawyer/">Find My Lawyer</a></li>
+        <li><a href="/cities/">Lawyers by City</a></li>
+        <li><a href="/blog/">Expat Guides</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 AvökatFinder. For informational purposes only — not legal advice.
+       <a href="mailto:info@avokatfinder.com">info@avokatfinder.com</a></p>
+  </div>
+</footer>
+<script src="/js/main.js"></script>
+</body></html>
+<script>
+(function(){
+const FIRMS=[{"name":"A&L Goodbody","slug":"a-l-goodbody","areas":["tax","banking-finance","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english, irish","type":"Local","size":"mid","website":"https://www.algoodbody.com","email":"info@algoodbody.com","phone":"+353 1 649 2000"},{"name":"Brick Court Chambers","slug":"brick-court-chambers","areas":["banking-finance","tax","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.brickcourt.ie","email":"clerk@brickcourt.ie","phone":"+353 1 410 2700"},{"name":"Clarendon Law","slug":"clarendon-law","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.clarendonlaw.ie","email":"info@clarendonlaw.ie","phone":"+353 1 633 7000"},{"name":"Dillon Eustace","slug":"dillon-eustace","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"dublin","langs":"english, french, german","type":"Local","size":"mid","website":"https://www.dilloneustace.ie","email":"info@dilloneustace.ie","phone":"+353 1 667 0022"},{"name":"DPP Law","slug":"dpp-law","areas":["real-estate","employment","intellectual-property","corporate-ma","immigration"],"city":"dublin","langs":"english, spanish, french","type":"Local","size":"mid","website":"https://dpplaw.ie","email":"info@dpplaw.ie","phone":"+353 1 817 1500"},{"name":"Eversheds Sutherland","slug":"eversheds-sutherland","areas":["tax","banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, multiple european languages","type":"Local","size":"mid","website":"https://eversheds-sutherland.com/en/locations/ireland","email":"dublinoffice@eversheds-sutherland.ie","phone":"+353 1 639 6000"},{"name":"Finnegan Menton","slug":"finnegan-menton","areas":["immigration","family-law","employment","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.finneganmenton.ie","email":"info@finneganmenton.ie","phone":"+353 1 448 2600"},{"name":"Forde Solicitors","slug":"forde-solicitors","areas":["immigration","family-law","employment","real-estate"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.fordesolicitors.ie","email":"info@fordesolicitors.ie","phone":"+353 1 283 8900"},{"name":"Garrettsons Solicitors","slug":"garrettsons-solicitors","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"limerick","langs":"english","type":"Local","size":"mid","website":"https://www.garrettonsgroup.ie","email":"info@garrettonsgroup.ie","phone":"+353 61 319 333"},{"name":"Gowran Solicitors","slug":"gowran-solicitors","areas":["immigration","family-law","employment","real-estate"],"city":"cork","langs":"english","type":"Local","size":"mid","website":"https://www.gowransolicitors.ie","email":"info@gowransolicitors.ie","phone":"+353 21 427 5999"},{"name":"Hayes Solicitors","slug":"hayes-solicitors","areas":["immigration","family-law","employment","real-estate"],"city":"dublin","langs":"english, polish, russian, chinese","type":"Local","size":"mid","website":"https://www.hayessolicitors.ie","email":"dublin@hayessolicitors.ie","phone":"+353 1 408 2000"},{"name":"Hennessy Legal","slug":"hennessy-legal","areas":["employment","immigration","family-law","corporate-ma"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.hennessylegal.ie","email":"info@hennessylegal.ie","phone":"+353 1 678 3333"},{"name":"Hogan Lovells","slug":"hogan-lovells","areas":["banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, multiple languages","type":"International","size":"mid","website":"https://www.hoganlovells.com/en/locations/dublin","email":"dublin@hoganlovells.com","phone":"+353 1 620 9700"},{"name":"Holmes O'Malley Sexton","slug":"holmes-o-malley-sexton","areas":["tax","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.holmessexton.com","email":"info@holmessexton.com","phone":"+353 1 633 6000"},{"name":"Hugh James","slug":"hugh-james","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.hughjames.com/locations/dublin/","email":"dublin@hughjames.com","phone":"+353 1 632 0000"},{"name":"Ircaw Solicitors","slug":"ircaw-solicitors","areas":["family-law","tax","employment","corporate-ma","immigration"],"city":"dublin","langs":"english, french, german","type":"Local","size":"mid","website":"https://www.ircaw.ie","email":"info@ircaw.ie","phone":"+353 1 872 3999"},{"name":"IMS Law","slug":"ims-law","areas":["banking-finance","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.imslaw.ie","email":"info@imslaw.ie","phone":"+353 1 613 0013"},{"name":"Iprosurv Solicitors","slug":"iprosurv-solicitors","areas":["immigration","family-law","employment","real-estate"],"city":"galway","langs":"english","type":"Local","size":"mid","website":"https://www.iprosurv.ie","email":"galway@iprosurv.ie","phone":"+353 91 566 200"},{"name":"Ivor Fitzpatrick","slug":"ivor-fitzpatrick","areas":["banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.ivorfitzpatrick.ie","email":"info@ivorfitzpatrick.ie","phone":"+353 1 639 8600"},{"name":"Jones Lang LaSalle Legal","slug":"jones-lang-lasalle-legal","areas":["employment","immigration","corporate-ma","real-estate"],"city":"dublin","langs":"english, multiple languages","type":"Local","size":"mid","website":"https://www.jll.ie/en/legal-services","email":"dublin@jll.ie","phone":"+353 1 639 6000"},{"name":"Kennelly Madigan","slug":"kennelly-madigan","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"cork","langs":"english","type":"Local","size":"mid","website":"https://www.kennellymadigan.ie","email":"info@kennellymadigan.ie","phone":"+353 21 427 3600"},{"name":"Lalor & Partners","slug":"lalor-partners","areas":["tax","banking-finance","real-estate","employment","corporate-ma"],"city":"dublin","langs":"english, french, german","type":"Local","size":"mid","website":"https://www.lalorandpartners.ie","email":"info@lalorandpartners.ie","phone":"+353 1 662 4600"},{"name":"Lawson Tait","slug":"lawson-tait","areas":["real-estate","employment","corporate-ma","immigration","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.lawsontait.ie","email":"dublin@lawsontait.ie","phone":"+353 1 676 0080"},{"name":"Linklaters","slug":"linklaters","areas":["tax","banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, multiple european languages","type":"International","size":"mid","website":"https://www.linklaters.com/en/locations/dublin","email":"dublin@linklaters.com","phone":"+353 1 637 4444"},{"name":"Mason Hayes & Curran","slug":"mason-hayes-curran","areas":["tax","banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.mhc.ie","email":"info@mhc.ie","phone":"+353 1 614 5000"},{"name":"McCann FitzGerald","slug":"mccann-fitzgerald","areas":["tax","banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, french, german","type":"Local","size":"mid","website":"https://www.mccannfitzgerald.ie","email":"info@mccannfitzgerald.ie","phone":"+353 1 606 4200"},{"name":"Michael Dunne & Partners","slug":"michael-dunne-partners","areas":["banking-finance","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.mdunne.ie","email":"info@mdunne.ie","phone":"+353 1 661 7000"},{"name":"O'Neill Solicitors","slug":"o-neill-solicitors","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english, spanish, polish","type":"Local","size":"mid","website":"https://www.oneillsolicitors.ie","email":"info@oneillsolicitors.ie","phone":"+353 1 633 6000"},{"name":"PLC","slug":"plc","areas":["banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.plc.ie","email":"dublin@plc.ie","phone":"+353 1 667 0022"},{"name":"Prentice Law","slug":"prentice-law","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"waterford","langs":"english","type":"Local","size":"mid","website":"https://www.prenticelawyer.ie","email":"info@prenticelawyer.ie","phone":"+353 51 858 000"},{"name":"Rossa Folan Solicitors","slug":"rossa-folan-solicitors","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english, french, portuguese","type":"Local","size":"mid","website":"https://www.rossafolan.ie","email":"info@rossafolan.ie","phone":"+353 1 475 8000"},{"name":"Seamus Morris Solicitors","slug":"seamus-morris-solicitors","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.seamusmorris.ie","email":"info@seamusmorris.ie","phone":"+353 1 872 0000"},{"name":"Sharpe Pritchard","slug":"sharpe-pritchard","areas":["banking-finance","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.sharpepritchard.com/locations/dublin","email":"dublin@sharpepritchard.com","phone":"+353 1 611 1100"},{"name":"Simmons & Simmons","slug":"simmons-simmons","areas":["tax","banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, multiple languages","type":"Local","size":"mid","website":"https://www.simmons-simmons.com/en/locations/dublin","email":"dublin@simmons-simmons.com","phone":"+353 1 612 2000"},{"name":"Sloan Solicitors","slug":"sloan-solicitors","areas":["immigration","family-law","employment","dispute-resolution"],"city":"dublin","langs":"english, multiple immigrant languages","type":"Local","size":"mid","website":"https://www.sloansolicitors.ie","email":"info@sloansolicitors.ie","phone":"+353 1 872 7000"},{"name":"Sorkin Solicitors","slug":"sorkin-solicitors","areas":["family-law","employment","corporate-ma","immigration","dispute-resolution"],"city":"dublin","langs":"english, russian, hebrew","type":"Local","size":"mid","website":"https://www.sorkinsolicitors.ie","email":"info@sorkinsolicitors.ie","phone":"+353 1 634 5000"},{"name":"Staples Legal","slug":"staples-legal","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"galway","langs":"english","type":"Local","size":"mid","website":"https://www.stapleslegal.ie","email":"info@stapleslegal.ie","phone":"+353 91 564 050"},{"name":"Thompson Law","slug":"thompson-law","areas":["real-estate","employment","corporate-ma","immigration","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.thompsonlaw.ie","email":"info@thompsonlaw.ie","phone":"+353 1 647 5000"},{"name":"TLT","slug":"tlt","areas":["real-estate","banking-finance","employment","corporate-ma","immigration","dispute-resolution"],"city":"dublin","langs":"english","type":"Local","size":"mid","website":"https://www.tltsolicitors.com/locations/dublin","email":"dublin@tltsolicitors.com","phone":"+353 1 638 6200"},{"name":"Travers Smith","slug":"travers-smith","areas":["banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, multiple languages","type":"Local","size":"mid","website":"https://www.traverssmith.com/en/locations/dublin","email":"dublin@traverssmith.com","phone":"+353 1 677 6933"},{"name":"Ua Tuama Solicitors","slug":"ua-tuama-solicitors","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"cork","langs":"english","type":"Local","size":"mid","website":"https://www.uataumasolicitors.ie","email":"info@uataumasolicitors.ie","phone":"+353 21 427 1600"},{"name":"Vincent Parsons","slug":"vincent-parsons","areas":["banking-finance","real-estate","employment","corporate-ma","dispute-resolution"],"city":"dublin","langs":"english, french","type":"Local","size":"mid","website":"https://www.vincentparsons.ie","email":"info@vincentparsons.ie","phone":"+353 1 667 5555"},{"name":"Wachtel Contos","slug":"wachtel-contos","areas":["family-law","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"english, german, french","type":"Local","size":"mid","website":"https://www.wachtelcontos.ie","email":"info@wachtelcontos.ie","phone":"+353 1 639 8600"},{"name":"Arthur Cox","slug":"arthur-cox","areas":["tax","real-estate","employment","corporate-ma","immigration"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"arthurcox.com","email":"","phone":""},{"name":"Matheson","slug":"matheson","areas":["employment","immigration","tax","corporate-ma"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"matheson.com","email":"","phone":""},{"name":"William Fry","slug":"william-fry","areas":["employment","immigration","corporate-ma"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"williamfry.ie","email":"","phone":""},{"name":"Byrne & Partners","slug":"byrne-partners","areas":["employment","immigration","corporate-ma"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"O'Sullivan Legal","slug":"o-sullivan-legal","areas":["family-law"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Criminal Law Advocates Dublin","slug":"criminal-law-advocates-dublin","areas":["immigration","criminal-law"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Hayes Solicitors Cork","slug":"hayes-solicitors-cork","areas":["employment","family-law","corporate-ma","real-estate"],"city":"cork","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Murphy O'Mahony","slug":"murphy-o-mahony","areas":["immigration","family-law","employment"],"city":"cork","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Keane & Co Solicitors","slug":"keane-co-solicitors","areas":["family-law","employment","real-estate"],"city":"cork","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Galway Legal Associates","slug":"galway-legal-associates","areas":["immigration","family-law","employment","real-estate"],"city":"galway","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Dougherty Solicitors Galway","slug":"dougherty-solicitors-galway","areas":["employment","immigration","corporate-ma"],"city":"galway","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Limerick Legal Partners","slug":"limerick-legal-partners","areas":["employment","family-law","corporate-ma","real-estate"],"city":"limerick","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Murphy Family Law","slug":"murphy-family-law","areas":["immigration","family-law","employment"],"city":"limerick","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Waterford Legal Services","slug":"waterford-legal-services","areas":["family-law","employment","real-estate"],"city":"waterford","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Kilkenny Solicitors","slug":"kilkenny-solicitors","areas":["family-law","employment","real-estate"],"city":"kilkenny","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Drogheda Law Associates","slug":"drogheda-law-associates","areas":["employment","family-law","corporate-ma","real-estate"],"city":"drogheda","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Dundalk Legal","slug":"dundalk-legal","areas":["family-law","employment","real-estate"],"city":"dundalk","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Sligo Law Partners","slug":"sligo-law-partners","areas":["family-law","real-estate"],"city":"sligo","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Wexford Legal Services","slug":"wexford-legal-services","areas":["family-law","employment","real-estate"],"city":"wexford","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Ennis Law Group","slug":"ennis-law-group","areas":["family-law","real-estate"],"city":"ennis","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Tralee Solicitors","slug":"tralee-solicitors","areas":["family-law","employment","real-estate"],"city":"tralee","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Brick Legal Immigration","slug":"brick-legal-immigration","areas":["immigration"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"SOLAS Employment Law","slug":"solas-employment-law","areas":["immigration","employment"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Dublin Probate & Inheritance","slug":"dublin-probate-inheritance","areas":["family-law"],"city":"dublin","langs":"en","type":"Local","size":"mid","website":"","email":"","phone":""},{"name":"Athlone Law Associates","slug":"athlone-law-associates","areas":["family-law","corporate-ma","real-estate"],"city":"athlone","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Letterkenny Legal","slug":"letterkenny-legal","areas":["family-law","employment","real-estate"],"city":"letterkenny","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Clonmel Solicitors","slug":"clonmel-solicitors","areas":["family-law","employment","real-estate"],"city":"clonmel","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Newbridge Legal","slug":"newbridge-legal","areas":["family-law","employment","real-estate"],"city":"newbridge","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""},{"name":"Naas Family Law Clinic","slug":"naas-family-law-clinic","areas":["family-law"],"city":"naas","langs":"en","type":"Local","size":"boutique","website":"","email":"","phone":""}];
+const answers={};let step=1;
+function scoreLabel(sc){return sc>=10?'Strong match':sc>=5?'Good match':sc>=2?'Possible match':'Listed firm';}
+function scoreDots(sc,max){const f=Math.min(5,Math.round((sc/Math.max(max,1))*5));return[1,2,3,4,5].map(i=>'<span style="color:'+(i<=f?'var(--gold)':'#ccc')+'">&#9679;</span>').join('');}
+function showResults(){
+  const scored=FIRMS.map(f=>{let sc=0;
+    if(answers.area&&f.areas.includes(answers.area))sc+=10;
+    if(answers.city&&answers.city!=='any'&&f.city===answers.city)sc+=5;
+    if(answers.lang&&answers.lang!=='any'&&f.langs.includes(answers.lang))sc+=3;
+    if(answers.entity==='company'&&f.type.includes('International'))sc+=2;
+    if(answers.entity==='individual'&&f.size==='boutique')sc+=2;
+    if(answers.service==='international'&&f.type.includes('International'))sc+=5;
+    else if(answers.service==='mid'&&f.size==='mid')sc+=5;
+    else if(answers.service==='boutique'&&f.size==='boutique')sc+=5;
+    else if(answers.service==='any')sc+=2;
+    return{f,sc};
+  }).sort((a,b)=>b.sc-a.sc).slice(0,3);
+  const maxSc=scored[0]?.sc||1;
+  const rl=['Best match','2nd choice','3rd choice'];
+  document.getElementById('wizard-results-list').innerHTML=scored.map(({f,sc},i)=>{
+    const areas=(f.areas||[]).slice(0,3).map(a=>'<span class="tag">'+a.replace(/-/g,' ')+'</span>').join('');
+    const links=[
+      f.website?'<a href="'+f.website+'" target="_blank" rel="noopener" class="btn btn-ghost btn-small">Website</a>':'',
+      f.email?'<a href="mailto:'+f.email+'" class="btn btn-primary btn-small">Email</a>':'',
+      f.phone?'<a href="tel:'+f.phone.replace(/ /g,'')+'" class="btn btn-ghost btn-small">Call</a>':'',
+    ].filter(Boolean).join('');
+    return '<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><span class="result-rank">'+rl[i]+'</span><span style="font-size:0.8rem;color:var(--text-muted)">'+scoreDots(sc,maxSc)+' <em>'+scoreLabel(sc)+'</em></span></div><h3>'+f.name+'</h3><div class="result-tags">'+areas+'</div><div class="result-links">'+links+'</div></div>';
+  }).join('');
+}
+function goStep(n){
+  document.querySelectorAll('.wizard-step').forEach(el=>el.classList.remove('active'));
+  if(n==='results'){document.getElementById('step-results').classList.add('active');document.getElementById('wizard-nav').style.display='none';showResults();return;}
+  document.getElementById('step-'+n).classList.add('active');
+  for(let i=1;i<=5;i++){const s=document.getElementById('s'+i),l=document.getElementById('l'+i);
+    if(i<n){s.classList.add('done');s.classList.remove('active');if(l)l.classList.add('done');}
+    else if(i===n){s.classList.add('active');s.classList.remove('done');}
+    else{s.classList.remove('active','done');if(l)l.classList.remove('done');}
+  }
+  document.getElementById('wstep-label').textContent='Step '+n+' of 5';
+  document.getElementById('wbtn-back').style.visibility=n>1?'visible':'hidden';
+}
+document.querySelectorAll('.wopt').forEach(btn=>{btn.addEventListener('click',function(){
+  answers[this.dataset.key]=this.dataset.val;
+  this.closest('.wizard-opts').querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));
+  this.classList.add('selected');
+  setTimeout(()=>{if(step<5){step++;goStep(step);}else{goStep('results');}},220);
+});});
+document.getElementById('wbtn-back').addEventListener('click',()=>{if(step>1){step--;goStep(step);}});
+document.getElementById('wizard-restart').addEventListener('click',()=>{Object.keys(answers).forEach(k=>delete answers[k]);step=1;document.getElementById('wizard-nav').style.display='';document.querySelectorAll('.wopt').forEach(b=>b.classList.remove('selected'));goStep(1);document.getElementById('step-results').classList.remove('active');});
+})();
+</script>
+</body></html>
