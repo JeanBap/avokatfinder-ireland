@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ireland.avokatfinder.com/sitemap.xml
