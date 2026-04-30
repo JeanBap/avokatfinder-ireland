@@ -37,7 +37,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://ireland.avokatfinder.com/glossary/land-registry-folio.html</loc>
+    <loc>https://ireland.avokatfinder.com/glossary/land-registry-folio/</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -49,13 +49,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ireland.avokatfinder.com/glossary/lease-agreement.html</loc>
+    <loc>https://ireland.avokatfinder.com/glossary/lease-agreement/</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://ireland.avokatfinder.com/glossary/mortgage.html</loc>
+    <loc>https://ireland.avokatfinder.com/glossary/mortgage/</loc>
     <lastmod>2026-04-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
