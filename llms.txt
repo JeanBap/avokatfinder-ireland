@@ -1,5 +1,31 @@
 # AvökatFinder Ireland
-> English-speaking law firm directory for Ireland
+> The English-language directory of lawyers and law firms in Ireland for expats, foreign nationals and international businesses.
 
-Directory: https://ireland.avokatfinder.com
-Email: info@avokatfinder.com
+## Main Pages
+- https://ireland.avokatfinder.com/: Home — find an English-speaking lawyer in Ireland
+- https://ireland.avokatfinder.com/lawyers/: Directory of verified law firms and lawyers in Ireland
+- https://ireland.avokatfinder.com/glossary/: Legal glossary — plain-English definitions of Ireland legal terms
+- https://ireland.avokatfinder.com/blog/: Expat legal guides and property law articles for Ireland
+- https://ireland.avokatfinder.com/about/: About AvökatFinder Ireland
+- https://ireland.avokatfinder.com/contact/: Contact us
+
+## Legal Glossary Terms
+- https://ireland.avokatfinder.com/glossary/land-registry-folio/
+- https://ireland.avokatfinder.com/glossary/land-registry-ireland/
+- https://ireland.avokatfinder.com/glossary/lease-agreement/
+- https://ireland.avokatfinder.com/glossary/mortgage/
+- https://ireland.avokatfinder.com/glossary/planning-permission-ireland/
+- https://ireland.avokatfinder.com/glossary/pps-number/
+- https://ireland.avokatfinder.com/glossary/solicitor-ireland/
+- https://ireland.avokatfinder.com/glossary/stamp-duty-ireland/
+
+## Site Info
+- Language: English
+- Audience: Expats, foreign nationals, international property buyers and businesses in Ireland
+- Content: Law firm directory, legal glossary, expat legal guides
+- Last updated: 2026-04-30
+- Sitemap: https://ireland.avokatfinder.com/sitemap.xml
+
+## Permissions
+User-agent: *
+Allow: /
